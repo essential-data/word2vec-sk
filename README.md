@@ -46,9 +46,7 @@ Technické detaily
 Slovník bol natrénovaný pomocou nasledovných príkazov:
 
     word2vec -train corpus-merged-lemma.txt -output vec-sk-cbow-lemma -size 200 -window 5 -sample 1e-4 -negative 5 -hs 0 -binary 1 -cbow 1 -iter 3 -threads 4
-    word2vec -train corpus-merged.txt -output vec-sk-cbow -size 200 -window 5 -sample 1e-4 -negative 5 -hs 0 -binary 1 -cbow 1 -iter 3 -threads 4
     word2vec -train corpus-merged-lemma.txt -output vec-sk-skipgram-lemma -size 200 -window 10 -sample 1e-4 -negative 5 -hs 0 -binary 1 -cbow 0 -iter 3 -threads 4
-    word2vec -train corpus-merged.txt -output vec-sk-skipgram -size 200 -window 10 -sample 1e-4 -negative 5 -hs 0 -binary 1 -cbow 0 -iter 3 -threads 4
 
 
 Odkazy
